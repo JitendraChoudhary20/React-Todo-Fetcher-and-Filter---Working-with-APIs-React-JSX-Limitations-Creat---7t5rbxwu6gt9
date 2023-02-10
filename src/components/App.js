@@ -19,7 +19,7 @@ const App = () => {
         setIsLoading(false)
         setActiveTodos(data.slice(0, 20))
       } catch (error) {
-        //setIsLoading(false)
+        // setIsLoading(false)
       }
     }
     doStuff()
@@ -31,7 +31,7 @@ const App = () => {
       <ol>
         {activeTodos
           .filter(todo => todo.completed === showCompleted || todo.completed === !showInCompleted)
-          .map((todo) => <li><Todo {...todo} /></li>)
+          .map((todo) => <li><todo {...todo} /></li>)
         }
       </ol>
       <div id="filter-holder">
