@@ -31,7 +31,7 @@ const App = () => {
       <ol>
         {activeTodos
           .filter(todo => todo.completed === showCompleted || todo.completed === !showInCompleted)
-          .map((todo) => <li><todo {...todo} /></li>)
+          .map((todo) => <li><Todo {...todo} /></li>)
         }
       </ol>
       <div id="filter-holder">
